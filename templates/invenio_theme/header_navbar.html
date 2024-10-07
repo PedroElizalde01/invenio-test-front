@@ -1,0 +1,30 @@
+{# templates/invenio_theme/header_navbar.html #}
+{% extends "invenio_theme/header_navbar.html" %}
+
+{% block navbar_nav %}
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="">Inicio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="">Búsqueda</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Recursos
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="/documentos">Documentos</a>
+      <a class="dropdown-item" href="/publicaciones">Publicaciones</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="/colecciones">Colecciones</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/about">Acerca de</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/contact">Contacto</a>
+  </li>
+</ul>
+{% endblock %}
